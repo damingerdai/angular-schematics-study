@@ -5,6 +5,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "schematics .:hello-world",
+    "start:name": "schematics .:hello-world --name=damingerdai",
+    "start:name:dry": "schematics .:hello-world --name=damingerdai --dry-run=false",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [

@@ -3,7 +3,7 @@
   "schematics": {
     "hello-world": {
       "description": "A blank schematic.",
-      "factory": "./hello-world/index#helloWorld"
+      "factory": "../dist/hello-world/index#helloWorld"
     }
   }
 }
