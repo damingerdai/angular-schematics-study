@@ -12,7 +12,9 @@
             "$default": {
                 "$source": "argv",
                 "index": 0
-            }
+            },
+            "//": "加入以下這行",
+            "x-prompt": "What name would you like?"
         }
     },
     "required": [
