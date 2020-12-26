@@ -6,7 +6,7 @@
     "build": "tsc -p tsconfig.json && cp -r -f src/hello-world/files dist/hello-world",
     "start": "schematics .:hello-world",
     "start:name": "schematics .:hello-world --name=damingerdai",
-    "start:name:dry": "schematics .:hello-world --name=damingerdai --dry-run=false",
+    "start:name:dry": "schematics .:hello-world --name=ArthurMing --dry-run=false",
     "test": "npm run build && jasmine dist/**/*_spec.js"
   },
   "keywords": [

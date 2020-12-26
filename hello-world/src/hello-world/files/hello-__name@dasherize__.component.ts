@@ -5,6 +5,6 @@ import { Component, Input } from '@angular/core';
     template: `<h1>Hello {{<%= addExclamation(name) %>}}!</h1>`,
     styles: [`h1 { font-family: Lato; }`]
 })
-export class HelloComponent {
+export class Hello<%= classify(name) %>Component {
     @Input() name: string;
 }
