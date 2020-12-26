@@ -7,7 +7,7 @@
     "start": "schematics .:hello-world",
     "start:name": "schematics .:hello-world --name=damingerdai",
     "start:name:dry": "schematics .:hello-world --name=damingerdai --dry-run=false",
-    "test": "npm run build && jasmine src/**/*_spec.js"
+    "test": "npm run build && jasmine dist/**/*_spec.js"
   },
   "keywords": [
     "schematics"
