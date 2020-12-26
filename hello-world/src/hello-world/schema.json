@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "HelloSchematics",
+    "title": "Hello Schema",
+    "description": "Generate a file of JavaScript",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the person",
+            "//": "加入這個設定",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
