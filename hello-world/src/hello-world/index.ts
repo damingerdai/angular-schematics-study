@@ -11,6 +11,7 @@ import {
   mergeWith
 } from '@angular-devkit/schematics';
 import { parseName } from '@schematics/angular/utility/parse-name';
+import { buildRelativePath } from '@schematics/angular/utility/find-module';
 
 import * as ts from 'typescript';
 
@@ -94,7 +95,9 @@ export function helloWorld(_options: HelloSchematics): Rule {
         lastImport = importNode;
       }
     }
-    const importStr = `\nimport { Hello${strings.classify(name)}Component } from '${parsePath.path}/hello-${parsePath.name}.component.ts';`;
+    const modulePath = defaultProjectPath + '/app.module.ts';
+    const componentPath = `${parsePath.path}/hello-${parsePath.name}.component.ts`;
+    const importStr = `\nimport { Hello${strings.classify(name)}Component } from '${buildRelativePath(modulePath, componentPath)}';`;
     declarationRecorder.insertLeft(lastImport!.end, importStr);
 
     // 更新
