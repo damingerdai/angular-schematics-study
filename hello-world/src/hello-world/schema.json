@@ -36,6 +36,10 @@
                     }
                 ]
             }
+        },
+        "project": {
+            "type": "string",
+            "description": "Generate in specific Angular CLI workspace project"
         }
     },
     "required": [
