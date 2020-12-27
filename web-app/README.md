@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## 创建helloworld
 
 ```
-ng generate ../hello-world/src/collection.json:hello-world feature/arthur-ming
+ng generate ../hello-world/src/collection.json:hello-world feature/arthur-ming --dryRun=true
 
 (ng generate /Users/gming001/Code/angular/schematics/hello-world/src/collection.json:hello-world feature/arthur-ming)
 ```
