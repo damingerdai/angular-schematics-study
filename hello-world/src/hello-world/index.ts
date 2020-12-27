@@ -11,7 +11,6 @@ import {
   mergeWith
 } from '@angular-devkit/schematics';
 import { parseName } from '@schematics/angular/utility/parse-name';
-// import { buildDefaultPath } from '@schematics/angular/utility/workspace';
 
 function addExclamation(value: string): string {
   return value + '!';
