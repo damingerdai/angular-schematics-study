@@ -8,7 +8,7 @@
     "start:name": "schematics .:hello-world --name=damingerdai",
     "start:name:dry": "schematics .:hello-world --name=ArthurMing --dry-run=false",
     "test": "npm run build && jasmine dist/**/*_spec.js",
-    "gen:schema": "npx -p dtsgenerator dtsgen src/hello-world/schema.json -o src/hello-world/schema.d.ts"
+    "gen:schema": "npx -p dtsgenerator dtsgen src/hello-world/schema.json -o src/hello-world/schema.d.ts && npx -p dtsgenerator dtsgen src/ng-add/schema.json -o src/ng-add/schema.d.ts"
   },
   "keywords": [
     "schematics"

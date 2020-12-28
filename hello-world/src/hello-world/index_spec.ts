@@ -25,7 +25,7 @@ describe('hello-world', () => {
     skipTests: false,
     skipPackageJson: false
   }
-  const defalutOptions: HelloSchematics = {
+  const defaultOptions: HelloSchematics = {
     name: 'feature/Arthur Ming'
   };
   let appTree: UnitTestTree;
@@ -46,14 +46,14 @@ describe('hello-world', () => {
   });
 
   it('输出文件名：hello-arthur-ming.component.ts', async () => {
-    const options: HelloSchematics = { ...defalutOptions };
+    const options: HelloSchematics = { ...defaultOptions };
     const tree = await runner.runSchematicAsync('hello-world', options, appTree).toPromise();
     const fullFileName = `/projects/hello/src/app/feature/hello-arthur-ming.component.ts`;
     expect(tree.files).toContain(fullFileName);
   })
 
   it('在angular项目中生成hello-arthur-ming.component.ts', async () => {
-    const options: HelloSchematics = { ...defalutOptions };
+    const options: HelloSchematics = { ...defaultOptions };
     appTree = await runner.runExternalSchematicAsync(
       '@schematics/angular',
       'application',

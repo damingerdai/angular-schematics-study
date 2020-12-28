@@ -6,6 +6,10 @@
       "factory": "../dist/hello-world/index#helloWorld",
       "//": "加入下面這行",
       "schema": "./hello-world/schema.json"
+    },
+    "ng-add": {
+      "description": "Add something to your Angular project.",
+      "factory": "../dist/ng-add/index#ngAdd"
     }
   }
 }
