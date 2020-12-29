@@ -18,6 +18,10 @@ ng add ../hello-world
 
 学习angular schematics过程中国的主要代码
 
+## schematics-app
+
+基于library的思路去安装schematics
+
 ## web-app
 
 一个用于实现、验证hello-world中的hello-world的schematics的例子
