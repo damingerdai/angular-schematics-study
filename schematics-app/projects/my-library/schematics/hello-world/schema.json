@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "HelloSchematics",
+    "title": "Hello Schema",
+    "description": "Generate a file of JavaScript",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the person",
+            "//": "加入這個設定",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "//": "加入以下這行",
+            "x-prompt": {
+                "message": "What name would you like?",
+                "type": "list",
+                "items": [
+                    {
+                        "value": "leo",
+                        "label": "Leo"
+                    },
+                    {
+                        "value": "kevin",
+                        "label": "Kevin"
+                    },
+                    {
+                        "value": "mike",
+                        "label": "Mike"
+                    },
+                    {
+                        "value": "will",
+                        "label": "Will"
+                    }
+                ]
+            }
+        },
+        "project": {
+            "type": "string",
+            "description": "Generate in specific Angular CLI workspace project"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
