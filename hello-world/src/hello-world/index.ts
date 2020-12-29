@@ -6,9 +6,9 @@ import {
   SchematicsException,
   url,
   apply,
-  template,
   move,
-  mergeWith
+  mergeWith,
+  applyTemplates
 } from '@angular-devkit/schematics';
 import { parseName } from '@schematics/angular/utility/parse-name';
 import { validateName, validateHtmlSelector } from '@schematics/angular/utility/validation';
@@ -78,7 +78,7 @@ export function helloWorld(_options: HelloSchematics): Rule {
 
     const sourceTemplates = url('./files');
     const sourceParametrizedTemplates = apply(sourceTemplates, [
-      template({
+      applyTemplates({
         ..._options,
         ...strings,
         addExclamation,
