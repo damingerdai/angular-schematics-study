@@ -22,6 +22,8 @@ ng add ../hello-world
 
 基于library的思路去安装schematics
 
+作者认为[[高效 Coding 術：Angular Schematics 實戰三十天] Day18 - 將 Schematics 整合進你的 Angular 專案裡](https://ithelp.ithome.com.tw/articles/10222829)的含金量不错
+
 ## web-app
 
 一个用于实现、验证hello-world中的hello-world的schematics的例子
