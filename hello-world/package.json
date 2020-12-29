@@ -1,6 +1,6 @@
 {
   "name": "hello-world",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json && cp -r -f src/hello-world/files dist/hello-world",
